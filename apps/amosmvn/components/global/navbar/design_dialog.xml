@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Amos Navbar Component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <home
+                jcr:primaryType="cq:Panel"
+                title="Home">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <home
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="HomePage Header: "
+                        name="./homepageheader"
+                        xtype="textfield"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Homepage Link:"
+                        name="./homelink"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                </items>
+            </home>
+            <category1
+                jcr:primaryType="cq:Panel"
+                title="Category1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <categoryheader
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Category Header:"
+                        name="./category1header"
+                        xtype="textfield"/>
+                    <brand1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header:"
+                        name="./brand1cat1"
+                        xtype="textfield"/>
+                    <brand2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header"
+                        name="./brand2cat1"
+                        xtype="textfield"/>
+                    <brand3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header"
+                        name="./brand3cat1"
+                        xtype="textfield"/>
+                    <brand4
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header"
+                        name="./brand4cat1"
+                        xtype="textfield"/>
+                    <brand5
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header"
+                        name="./brand5cat1"
+                        xtype="textfield"/>
+                    <link1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 1 Link:"
+                        name="./link1cat1"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                    <link2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 2 Link:"
+                        name="./link2cat1"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                    <link3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 3 Link:"
+                        name="./link3cat1"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                    <link4
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 4 Link:"
+                        name="./link4cat1"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                    <link5
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 5 Link:"
+                        name="./link5cat1"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                </items>
+            </category1>
+            <category2
+                jcr:primaryType="cq:Panel"
+                title="Category2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <categoryheader
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Category Header:"
+                        name="./category2header"
+                        xtype="textfield"/>
+                    <brand1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header:"
+                        name="./brand1cat2"
+                        xtype="textfield"/>
+                    <brand2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header"
+                        name="./brand2cat2"
+                        xtype="textfield"/>
+                    <brand3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand Header"
+                        name="./brand3cat2"
+                        xtype="textfield"/>
+                    <link1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 1 Link:"
+                        name="./link1cat2"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                    <link2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 2 Link:"
+                        name="./link2cat2"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                    <link3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand 3 Link:"
+                        name="./link3cat2"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                </items>
+            </category2>
+        </items>
+    </items>
+</jcr:root>

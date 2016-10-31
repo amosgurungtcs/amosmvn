@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Row">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <col1width
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="4"
+                        fieldDescription="Row must add to 12"
+                        fieldLabel="Column 1 Width:"
+                        maxValue="12"
+                        minValue="0"
+                        name="./col1width"
+                        xtype="numberfield"/>
+                    <col2width
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="4"
+                        fieldDescription="Row must add to 12"
+                        fieldLabel="Column 2 Width:"
+                        maxValue="12"
+                        minValue="0"
+                        name="./col2width"
+                        xtype="numberfield"/>
+                    <col3width
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="4"
+                        fieldDescription="Row must add to 12"
+                        fieldLabel="Column 3 Width:"
+                        maxValue="12"
+                        minValue="0"
+                        name="./col3width"
+                        xtype="numberfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

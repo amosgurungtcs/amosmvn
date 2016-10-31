@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <brandnames
+                jcr:primaryType="cq:Panel"
+                title="Brands">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <captions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand name:"
+                        name="./brands"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Brand name"
+                            xtype="textfield"/>
+                    </captions>
+                </items>
+            </brandnames>
+            <links
+                jcr:primaryType="cq:Panel"
+                title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <captions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Brand link:"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Brand link"
+                            rootPath="/content/Amos"
+                            xtype="pathfield"/>
+                    </captions>
+                </items>
+            </links>
+        </items>
+    </items>
+</jcr:root>

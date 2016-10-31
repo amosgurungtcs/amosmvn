@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<records version="1.0">
+    <p data-sly-use.records="libs.foundation.components.page.productfeed.sp.FeedPropertiesProvider"
+            data-sly-list="${records.productsData}" data-sly-unwrap>
+
+    <p data-sly-test.er="${!item['error']}" data-sly-unwrap>
+        <record>
+            <id>${item["sku"]}</id>
+            <title>${item["title"]}</title>
+            <description>
+                <![CDATA[${item["description"] @ context="html"}]]>
+            </description>
+            <page-url>
+                ${item["url"]}
+            </page-url>
+            <sku>${item["sku"]}</sku>
+            <price>${item["price"]}</price>
+            <thumbnail_path>
+                <![CDATA[${item["thumb_path"] @ context="uri"}]]>
+            </thumbnail_path>
+            <size>${item["size"]}</size>
+            <color>${item["color"]}</color>
+            <gender>${item["gender"]}</gender>
+            <season>${item["season"]}</season>
+            <activity>${item["activity"]}</activity>
+            <apparel>${item["apparel"]}</apparel>
+        </record>
+
+    </p>
+	<p data-sly-test="${!er}" data-sly-unwrap>
+		${item['error']}
+	</p>
+        </p>
+</records>

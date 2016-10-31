@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    datasource.name="amosmvnjdbcds"
+    default.autocommit="{Boolean}true"
+    default.readonly="{Boolean}false"
+    jdbc.connection.uri="jdbc:mysql://localhost:3306/amosmvn"
+    jdbc.driver.class="com.mysql.jdbc.Driver"
+    jdbc.password="password"
+    jdbc.username="root"
+    name="com.day.commons.datasource.jdbcpool.JdbcPoolService-mysqldbpool"
+    pool.max.wait.msec="{Long}1000"
+    pool.size="{Long}10"/>

@@ -1,0 +1,12 @@
+ins.textAdded {
+    color: #0c0;
+}
+del.textRemoved {
+    color: #c00;
+}
+img.imageAdded {
+    border: 2px solid #0c0;
+}
+img.imageRemoved {
+    border: 2px solid #c00;
+}

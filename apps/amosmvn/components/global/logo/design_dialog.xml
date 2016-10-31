@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Amos Logo Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                jcr:primaryType="cq:Widget"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                requestSuffix=".img.png"
+                rotateParameter="./imageRotate"
+                title="Image"
+                xtype="html5smartimage"/>
+            <attributes
+                jcr:primaryType="cq:Panel"
+                title="Attributes">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <size
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image dimensions:"
+                        name="./dims"
+                        xtype="sizefield"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Logo Link:"
+                        name="./link"
+                        plugins="setRootNodePlugin"
+                        xtype="pathfield"/>
+                </items>
+            </attributes>
+        </items>
+    </items>
+</jcr:root>

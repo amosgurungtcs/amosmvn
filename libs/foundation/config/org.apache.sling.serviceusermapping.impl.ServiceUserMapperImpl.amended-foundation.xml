@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    user.default=""
+    user.mapping="[com.day.cq.wcm.cq-wcm-foundation:hierarchymodification-listener-service=hierarchymodification-listener-service,com.day.cq.wcm.cq-wcm-foundation:start-workflow-service=foundation-forms-service,com.day.cq.wcm.cq-wcm-foundation:colctl-postprocessor-service=hierarchymodification-listener-service,com.day.cq.wcm.cq-wcm-foundation:form-store-service=foundation-forms-store-service]"/>

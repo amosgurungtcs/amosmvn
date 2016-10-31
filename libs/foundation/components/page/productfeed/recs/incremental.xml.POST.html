@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
+    <title data-sly-use.records="libs.foundation.components.page.productfeed.recs.RecommendationsFeedPropertiesProvider">AEM incremental product feed</title>
+        <items data-sly-list="${records.productsData}" data-sly-unwrap>
+            <entry data-sly-test.error="${!item['error']}">
+                <id>${item["recPageId"]}</id>
+                <title>${item["title"]}</title>
+                <description><![CDATA[${item["description"] @ context="html"}]]></description>
+                <link href="${item['url'] @ context='uri'}"/>
+                <image_link><![CDATA[${item["thumb_path"] @ context="uri"}]]></image_link>
+                <price><![CDATA[${item["price"] @ context="html"}]]></price>
+                <product_type>${item["tags"]}</product_type>
+            </entry>
+            <error data-sly-test="${!error}">
+                ${item['error']}
+            </error>
+        </items>
+</feed>

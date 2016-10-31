@@ -1,0 +1,72 @@
+
+.header {
+	background-color: #eee;
+}
+.navbar-inverse {
+    background-color: #eee;
+        background-image:none;
+	border: none !important; 
+}
+.navbar{
+background-color:#eee;
+}
+
+@media only screen and (min-width: 768px){
+    .vmargin {
+      margin-top: 4.5px;
+    }
+}
+
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.carousel-inner img {
+  margin: auto;
+}
+
+
+/**
+ * Demo Styles
+ */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+@media screen and (min-width: 768px) {
+	.footer{
+		min-height: 60px;
+	}
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.recommended .carousel-inner  .item  .row  *  img, .recommended .carousel-inner  .item  .row  *  a img{
+       height: 100px;
+ }
+ 
+.recommended .carousel-inner > .item > img, .recommended .carousel-inner > .item > a > img{
+       height: 100px;
+ }
+ 
+ .product-description h5
+ {
+ 	display: inline;
+ 	color: #878787; 		//gray
+ }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <images_x0020_tab
+                jcr:primaryType="cq:Panel"
+                title="Images">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <images
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./images"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            rootPath="/content/dam/Amos"
+                            xtype="pathfield"/>
+                    </images>
+                </items>
+            </images_x0020_tab>
+            <captions_x0020_tab
+                jcr:primaryType="cq:Panel"
+                title="Captions">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <captions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image Caption:"
+                        name="./captions"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image Caption"
+                            xtype="textfield"/>
+                    </captions>
+                </items>
+            </captions_x0020_tab>
+        </items>
+    </items>
+</jcr:root>

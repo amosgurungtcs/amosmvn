@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <images_x0020_tab
+                jcr:primaryType="cq:Panel"
+                title="Images">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./image1"
+                        rootPath="/content/dam/Amos"
+                        xtype="pathfield"/>
+                    <image2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./image2"
+                        rootPath="/content/dam/Amos"
+                        xtype="pathfield"/>
+                    <image3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./image3"
+                        rootPath="/content/dam/Amos"
+                        xtype="pathfield"/>
+                    <image4
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./image4"
+                        rootPath="/content/dam/Amos"
+                        xtype="pathfield"/>
+                    <image5
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./image5"
+                        rootPath="/content/dam/Amos"
+                        xtype="pathfield"/>
+                    <image6
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image item:"
+                        name="./image6"
+                        rootPath="/content/dam/Amos"
+                        xtype="pathfield"/>
+                </items>
+            </images_x0020_tab>
+        </items>
+    </items>
+</jcr:root>

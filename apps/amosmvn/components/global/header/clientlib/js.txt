@@ -1,0 +1,2 @@
+#base=scripts
+search.js
